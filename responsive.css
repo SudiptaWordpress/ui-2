@@ -1,0 +1,249 @@
+
+/* Extra Large Device */
+
+@media (min-width: 1200px){
+
+
+	.container{
+		max-width: 1240px;
+	}
+
+}
+
+
+/* Large Device*/
+
+@media (min-width: 992px) and 
+(max-width:1199.98px){
+
+	/* BANNER TEXT THIK KORA */
+
+	.banner-text{
+
+		min-width: 85%;
+	}
+	
+
+}
+
+
+/* Tab Or Medium Device */
+
+
+@media (min-width: 768px) and 
+(max-width:991px){
+
+	.banner-text{
+
+		width: 85%;
+	}
+
+	/* About us title */
+
+	.border-after{
+
+		font-size: 14px;
+
+	}
+
+
+	/* About descripation */
+
+	.about-us-text p { 
+    
+    	font-size: 11px;
+
+
+    }
+
+
+    /* button */
+
+    .btn-lg {
+    	
+    	padding: 15px 17px;
+	
+	}
+
+
+	/* Portfolio Row and Service row 
+	margin-bottom service-item*/
+
+	.col-4, .col-3{
+
+		flex-basis: 50%;
+	}
+
+
+
+}
+
+/* Smartphone */ 
+
+@media (min-width: 576px) and 
+(max-width:767.98px){
+
+
+	/* Copy From Upper */
+
+
+	/* Navbar Fixed */
+
+	.logo h1 {
+   			
+   			font-size: 21px;
+	}
+
+	.navbar{
+	
+		width: 390px;
+	}
+
+	.navbar li{
+
+		font-size: 10px;
+	}
+
+	.banner-text{
+
+		width: 85%;
+	}
+
+
+	/* header */
+	.header{
+
+		height: 440px;
+
+
+
+		}
+
+	/* About us title */
+
+	.border-after{
+
+		font-size: 14px;
+
+	}
+
+
+	/* About descripation */
+
+	.about-us-text p { 
+    
+    	font-size: 11px;
+
+
+    }
+
+
+    /* button */
+
+    .btn-lg {
+    	
+    	padding: 15px 17px;
+	
+	}
+
+
+	/* Portfolio Row and Service row 
+	margin-bottom service-item*/
+
+	.col-4, .col-3{
+
+		flex-basis: 50%;
+	}
+
+	.col-6{
+
+		flex-basis: 100%;
+	}
+}
+
+/* Small device */
+
+@media (max-width: 575px)
+{
+
+
+
+	/* Copy From Upper */
+
+
+	/* Navbar Fixed */
+
+	.logo h1 {
+   			
+   			font-size: 21px;
+	}
+
+	.navbar{
+	
+		width: 390px;
+		justify-content: center;
+	}
+
+	.navbar li{
+
+		font-size: 10px;
+	}
+
+	.banner-text{
+
+		width: 85%;
+	}
+
+
+	/* header */
+	.header{
+
+		height: 440px;
+
+
+
+		}
+
+	/* About us title */
+
+	.border-after{
+
+		font-size: 14px;
+
+	}
+
+
+	/* About descripation */
+
+	.about-us-text p { 
+    
+    	font-size: 11px;
+
+
+    }
+
+
+    /* button */
+
+    .btn-lg {
+    	
+    	padding: 15px 17px;
+	
+	}
+
+
+	/* Portfolio Row and Service row 
+	margin-bottom service-item*/
+
+	.col-4, .col-3{
+
+		flex-basis: 50%;
+	}
+
+	.col-6{
+
+		flex-basis: 100%;
+	}
+
+
+}

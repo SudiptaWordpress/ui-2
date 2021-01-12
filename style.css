@@ -1,0 +1,530 @@
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+/* Common CSS */
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+*, ::after, ::before{
+
+	box-sizing: border-box;
+}
+
+
+/* Title Defult margin removed */
+
+h1,h2,h3,h4,h5,h6,p{
+
+	margin-top: 	0;
+	margin-bottom:  0;
+
+}
+
+.pad-70{
+
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+a{
+
+	text-decoration: none;
+}
+
+/* Website Full Wraper */
+
+.container{
+
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* All row Common CSS */
+
+.row{
+
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+
+}
+
+.d-flex{
+
+	display: flex;
+}
+
+.col{
+
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+
+.col-4{
+
+	flex-basis: 33.33%;
+}
+
+/* Logo Text Color */
+
+.text-primary{
+
+	color: #33cccc;
+}
+
+
+/* text padding */
+
+
+/* text-padding */
+.tp-10{
+
+	padding-top: 15px;
+}
+
+/* Text Uppercase */
+
+
+.text-uppercase{
+
+	text-transform: uppercase;
+}
+
+/* Text-center */
+
+
+.text-center{
+
+	text-align: center;
+}
+
+
+.bg-color{
+
+	background-color: #33cccc;
+}
+
+
+/* button Design CSS */
+
+
+.btn{
+
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	display: inline-block;
+
+
+
+}
+
+
+.btn-lg{
+
+	padding: 17px 40px;
+}
+
+
+
+.btn-primary{
+
+	background-color: #33cccc;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+/* End Common CSS */
+
+
+/* Header work Start Here */
+
+
+header{
+
+	background-image: url('image/background.png');
+	height: 700px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+
+
+/* Navbar work start here */
+
+/* logo */
+
+.logo h1{
+
+	font-size: 36px;
+}
+
+.header-wraper{
+
+	padding-top: 50px;
+	justify-content: space-between;
+
+}
+
+
+.navbar{
+
+	list-style: none;
+	justify-content: space-between;
+	width: 500px;
+}
+
+.navbar li a{
+
+	color: #fff;
+	font-weight: 700;
+}
+
+
+.banner-text h2{
+
+	font-size: 36px;
+	color:#fff; 
+	margin-bottom: 40px;
+
+}
+
+
+.banner-text{
+
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+/* About Us section style */
+
+/* About us section-Header */
+
+.section-header{
+
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+
+.section-header h2{
+
+
+	font-size: 25px;
+	margin-bottom: 10px;
+	color: #333333;
+
+
+}
+
+
+.section-header p{
+
+	max-width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #999999;
+}
+
+/* About us Image Design */
+
+.about-us-img img{
+
+	max-width: 100%;
+	width: 100%;
+	display: block;
+	margin-top: 45px;
+}
+
+.col-6{
+
+	flex-basis: 50%;
+}
+
+
+.border-after{
+
+	font-size: 17px;
+	padding-bottom: 20px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+
+/* After */
+
+.border-after::after{
+
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: #33cccc;
+	width: 120px;
+	height: 3px;
+
+
+}
+
+
+.about-us-text p{
+
+	margin-bottom: 30px;
+	font-size: 15px;
+	color: #999999;
+
+}
+
+
+/* Portfolio style */
+
+.portfolio-wraper, .contact-us-wraper{
+
+	background-color: #f3f5f7;
+}
+
+
+/* Portfolio Text */
+
+
+.port-text{
+
+	justify-content: space-between;
+	padding: 15px;
+
+}
+
+
+.port-item{
+
+	background-color: #fff;
+}
+
+
+/* Image Style */
+
+.port-img{
+
+	position: relative;
+}
+
+.overlay{
+
+
+	position: absolute;
+	width: 100%;
+	height: 0;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .3);
+	transition: .5s;
+}
+
+
+/* Image Sizing */
+.port-img img{
+
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+
+.port-item:hover .overlay{
+
+	height: 100%;
+}
+
+
+.btn-readmore{
+
+	border: 1px solid #fff;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+}
+
+
+.port-item:hover .btn-readmore{
+
+	visibility: visible;
+	transition: .3s;
+}
+
+
+/* Services Section Start Here */
+
+/* services item */
+ .service-item{
+	
+	text-align: center;
+	border: 1px solid #ddd;
+	padding: 30px 50px;
+	transition: .3s;
+	margin-bottom: 30px;
+
+ }
+
+
+ /* col-3 Desing */
+
+ .col-3{
+
+ 	flex-basis: 25%;
+ }
+
+
+ /* services-after Border */
+ .service-after{
+
+ 	position: relative;
+ 	padding-bottom: 20px;
+ 	margin-bottom: 20px;
+ 	text-transform: uppercase;
+ 	margin-top: 20px;
+ }
+
+
+ .service-after::after{
+
+ 	position: absolute;
+ 	margin-top: 20px;
+ 	content: "";
+ 	width: 100px;
+ 	height: 2px;
+ 	background-color: #ddd;
+ 	bottom: 0;
+ 	left: 50%;
+ 	transform: translateX(-50%);
+
+ }
+
+ /* icon */
+ .icon i{
+
+ 	color: #39c9da;
+ 	font-size: 50px;
+
+ }
+
+ /* button */
+
+ .btn-readmore-black{
+ 	background-color: #222;
+ 	color: #fff;
+ }
+
+ /* descripation */
+
+ .service-item p{
+
+ 	margin-bottom: 20px;
+ }
+
+ /* hover */
+
+ .service-item:hover{
+
+
+  background-color: #39c9da;
+
+ }
+
+ /* hover text icon */
+
+ .service-item:hover .icon i,
+ .service-item:hover .service-descripation,
+ .service-item:hover .service-after
+ {
+
+ 	color: #fff;
+
+ }
+
+ .service-item:hover .btn{
+
+ 	background-color: #fff;
+ 	color: black;
+ }
+
+
+/* Services Section End Here */
+
+
+/* Contact Section Start */
+
+.address h4{
+
+	margin-bottom: 15px;
+}
+
+
+/* form style */
+
+/* form-group */
+.form-group{
+
+	margin-bottom: 20px;
+}
+
+/* form-control */
+
+.form-control, .form-text{
+
+ width: 100%;
+ background-color: #fff;
+ border:  1px solid #ddd;
+ height: 50px;
+ padding: 13px;
+ font-family: 'Open Sans', sans-serif;
+}
+
+
+/* form-text */
+
+.form-text{
+
+	height: 155px;
+	resize: vertical;
+}
+
+
+/* button style */
+
+.btn-submit{
+
+	float: right;
+}
+
+/* footer */
+footer{
+
+	background-color: #39c9da;
+	padding: 20px 0;
+}
+
+/* Contact Section End */
